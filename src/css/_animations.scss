@@ -1,0 +1,25 @@
+@use "_base";
+@use "_layout";
+@use "component";
+
+@keyframes buttonTransition {
+    0% {
+        background-color: rgb(57, 80, 207);
+        border-color: hsl(60, 100%, 50%);
+        color: aquamarine;  
+        padding-bottom: 0.5em;
+    }
+
+    50% {
+        background-color: cadetblue;
+        border-color: red;
+        color: rgb(219, 219, 219);
+      
+    }
+
+    100% {
+        border-color: blue;
+        color: rgb(250, 255, 234);
+        background-color: rgb(138, 225, 124);
+    }
+}
