@@ -45,19 +45,43 @@
         </div>
     </header>
     <main>
-        <section>
-            <h1>Animationer</h1>
-            <button onclick="displayDogs()" id="dogButton">Klicka Här!</button>
-        </section>
+
+
+
+        <h1>Animationer</h1>
         <div class="dogDiv">
+            <button onclick="displayDogs()" id="dogButton">Klicka Här!</button>
+
+            <div class="golden_container">
+                <picture>
+                    <source srcset="./images/images_animation/golden1.png?as=avif&width=500" type="image/avif">
+                    <img id="goldenDog1" src="./images/images_animation/golden1.png?width=500"
+                        alt="Håller valp i händerna" width="500">
+                </picture>
+                <picture>
+                    <source srcset="./images/images_animation/golden2.png?as=avif&width=500" type="image/avif">
+                    <img id="goldenDog2" src="./images/images_animation/golden2.png?width=500"
+                        alt="Håller valp i händerna" width="500">
+                </picture>
+            </div>
             <picture>
                 <source srcset="./images/images_animation/dog1.png?as=avif&width=500" type="image/avif">
-                <img src="./images/images_animation/dog1.png?as=jpg&width=500" alt="Håller valp i händerna" width="500"> 
-            </picture> 
+                <img id="popupDog" src="./images/images_animation/dog1.png?as=jpg&width=500"
+                    alt="Håller valp i händerna" width="500">
+            </picture>
+
+
+        </div>
+        <div id="taco_container">
+            <picture>
+                <source srcset="./images/images_animation/taco.png?as=avif&width=500" type="image/avif">
+                <img id="taco" src="./images/images_animation/taco.png?as=jpg&width=500" alt="Håller valp i händerna"
+                    width="500">
+            </picture>
         </div>
     </main>
     <!--footer-->
-    <footer>
+    <footer id="animationfooter">
         <p>Laborationsuppgift för kursen Frontend-baserad utveckling
         </p>
         <p>Mittuniversitetet</p>

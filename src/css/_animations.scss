@@ -1,12 +1,12 @@
 @use "_base";
 @use "_layout";
-@use "component";
+@use "_component";
 
 @keyframes buttonTransition {
     0% {
         background-color: rgb(57, 80, 207);
         border-color: hsl(60, 100%, 50%);
-        color: aquamarine;  
+        color: aquamarine;
         padding-bottom: 0.5em;
     }
 
@@ -14,7 +14,7 @@
         background-color: cadetblue;
         border-color: red;
         color: rgb(219, 219, 219);
-      
+
     }
 
     100% {
@@ -23,3 +23,62 @@
         background-color: rgb(138, 225, 124);
     }
 }
+
+
+@keyframes popupDog {
+    0% {
+        transform: translate(100px -100px);
+    }
+    100% {
+        transform: translate(0px, 100px);
+    }
+}
+
+#popupDog {
+   
+    position: absolute;
+    bottom: -60%;
+    animation-name: popupDog;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes goldenDogAnimation {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+#goldenDog2 {
+    animation-name: goldenDogAnimation;
+    animation-duration: 2.5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes tacoAnimation {
+    0% {
+        transform: translate(120%, 100%);
+    }
+    20% {
+        transform: translate(10%, 100%);
+    }
+    40% {
+        transform: translate(50%, -10%);
+    }
+    80% {
+        transform: translate(110%, 100%);
+    }
+      100% {
+        transform: translate(0%, 100%);
+      }
+}
+
+#taco {margin-top: 10em;
+    animation: tacoAnimation 10s alternate-reverse infinite;}

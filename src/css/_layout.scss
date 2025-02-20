@@ -14,12 +14,68 @@ body {
 }
 
 #dogButton {
-position: relative;
- margin-top: 5em;
- text-align: center;
-padding-right: 2em; padding-left: 2em;
+    position: relative;
+    margin-top: 5em;
+    z-index: 1000;
+    text-align: center;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
+.dogDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+        border: 0;
+    }
+
+    #popupDog {
+    }
+}
+
+.golden_container {
+    width: 30em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30em;
+
+    #goldenDog1 {
+        position: relative;
+        width: 100%;
+    }
+
+    #goldenDog2 {
+        left: -140;
+        top: -23;
+        position: relative;
+        width: 40%;
+    }
+}
+
+#taco_container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
+}
+
+#taco {
+    border: 0;
+    width: 10em;
+    margin: auto;
+}
+
+#animationfooter {
+    margin: 0;
+}
 
 li {
     @extend a;
@@ -89,6 +145,7 @@ ul {
 
 
 h1 {
+    padding-top: 2em;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -100,7 +157,7 @@ h2 {
     font-size: 20px;
 }
 
-article { 
+article {
     background-color: rgb(226, 224, 224);
     width: 70%;
     color: white;
@@ -149,6 +206,7 @@ section {
 @media all and (min-width: 800px) {
     button {
         display: none;
+        z-index: 1000;
     }
 
 
