@@ -5,6 +5,7 @@
 let openHamburgerEl = document.querySelector(".open-hamburger")
 let closeHamburgerEl = document.querySelector(".close-hamburger")
 let dogButtonEl = document.querySelector("#dogButton");
+let dogDivEl = document.querySelector(".dogDiv")
 
 dogButtonEl.addEventListener("click", displayDogs)
 openHamburgerEl.addEventListener("click", toggleMenu);
@@ -23,4 +24,5 @@ function toggleMenu() {
 
 function displayDogs() {
     dogButtonEl.style.display = "none";
+    dogDivEl.style.display = "block";
 }
