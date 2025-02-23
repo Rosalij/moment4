@@ -27,19 +27,18 @@
 
 @keyframes popupDog {
     0% {
-        transform: translate(100px -100px);
+        transform: translate(0px, 500px);
     }
+
     100% {
         transform: translate(0px, 100px);
     }
 }
 
 #popupDog {
-   
-    position: absolute;
-    bottom: -60%;
+    margin-top: -500px;
     animation-name: popupDog;
-    animation-duration: 7s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
@@ -64,21 +63,33 @@
 
 @keyframes tacoAnimation {
     0% {
-        transform: translate(120%, 100%);
+        top: 0;
+        left: 40%;
     }
-    20% {
-        transform: translate(10%, 100%);
+
+    25% {
+        top: 50%;
+        left: 10%;
     }
-    40% {
-        transform: translate(50%, -10%);
+
+    50% {
+        top: 20%;
+        left: 50%;
     }
-    80% {
-        transform: translate(110%, 100%);
+
+    75% {
+        top: 0%;
+        left: 60%;
     }
-      100% {
-        transform: translate(0%, 100%);
-      }
+
+    100% {
+        top: 6%;
+        left: 30%;
+    }
 }
 
-#taco {margin-top: 10em;
-    animation: tacoAnimation 10s alternate-reverse infinite;}
+#taco {
+    margin-top: 10em;
+    position: absolute;
+    animation: tacoAnimation 5s alternate-reverse infinite;
+}

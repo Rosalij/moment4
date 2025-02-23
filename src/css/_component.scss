@@ -11,8 +11,8 @@ button {
 #dogButton {
     background-color: none;
     display: block;
+    transition: 2s;
     width: 60%;
-    
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -30,6 +30,7 @@ button {
 }
 
 #dogButton:hover {
+    width: 50%;
     border-style:inset;
     border-width: 10px;
    box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.412);

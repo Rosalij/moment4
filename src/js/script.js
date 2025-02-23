@@ -6,13 +6,23 @@ let openHamburgerEl = document.querySelector(".open-hamburger")
 let closeHamburgerEl = document.querySelector(".close-hamburger")
 let dogButtonEl = document.querySelector("#dogButton");
 let dogDivEl = document.querySelector(".dogDiv")
+ let hamburgerMenuEl = document.querySelector(".hamburgermenu")
 
-dogButtonEl.addEventListener("click", displayDogs)
+
+
+
+if (dogButtonEl){
+dogButtonEl.addEventListener("click", displayDogs)    
+}
+
+if (openHamburgerEl) {
 openHamburgerEl.addEventListener("click", toggleMenu);
+} 
+if (closeHamburgerEl) {
 closeHamburgerEl.addEventListener("click", toggleMenu)
-
+}
 function toggleMenu() {
-    let hamburgerMenuEl = document.querySelector(".hamburgermenu")
+   
     let style = window.getComputedStyle(hamburgerMenuEl)
     if (style.display === "none") {
         hamburgerMenuEl.style.display = "block";
